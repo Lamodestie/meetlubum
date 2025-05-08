@@ -31,7 +31,7 @@ function saveProfile(){
   document.getElementById("saveMessage").textContent = `Profil de ${name} enregistré !`;
 }
 // Gérer l'inscription
-document.getElementById("registerForm")?.addEventListener("submit", function(e){
+document.getElementById("index")?.addEventListener("submit", function(e){
   e.preventDefault();
   const name = document.getElementById("name").value;
   document.getElementById("message").textContent = `Bienvenue ${name}, ton inscription est réussie !`;
@@ -42,7 +42,7 @@ document.getElementById("registerForm")?.addEventListener("submit", function(e){
 });
 
 // Gérer la connexion
-document.getElementById("loginForm")?.addEventListener("submit", function(e){
+document.getElementById("login")?.addEventListener("submit", function(e){
   e.preventDefault();
   const email = document.getElementById("loginEmail").value;
   document.getElementById("loginMessage").textContent = `Bienvenue ${email}`;
